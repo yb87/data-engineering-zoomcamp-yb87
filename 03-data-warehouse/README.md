@@ -51,6 +51,7 @@ Answer = 8,333
 
 ## Question 5:
 What is the best strategy to make an optimized table in Big Query if your query will always filter based on tpep_dropoff_datetime and order the results by VendorID (Create a new table with this strategy)
+
 Answer = Partition by tpep_dropoff_datetime and Cluster on VendorID
 
 ## Question 6:
@@ -72,11 +73,10 @@ Answer = 310.24 MB for non-partitioned table and 26.84 MB for the partitioned ta
 
 ## Question 7:
 Where is the data stored in the External Table you created?
+
 Answer = GCP Bucket
 
 ## Question 8:
 It is best practice in Big Query to always cluster your data:
-Answer = False
 
-## (Bonus: Not worth points) Question 8:
-No Points: Write a SELECT count(*) query FROM the materialized table you created. How many bytes does it estimate will be read? Why?
+Answer = False
